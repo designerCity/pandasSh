@@ -1,0 +1,2 @@
+#데이터저장
+df2.iloc[list_man].to_csv('./Desktop/도시공간구조 및 분석/팀플/남자고용률.csv', encoding='cp949')
