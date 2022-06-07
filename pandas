@@ -1,2 +1,21 @@
+python
+
+
+import numpy as np
+tmp=employee_df.iloc[:,2:].astype(np.float64)
+
+for i in range(1,4):
+    print(i)
+
+for i,j in enumerate(range(12,15)):
+    print(i,j)
+    
+a=[1,2,3];b=[3,4,5]
+for i,j in zip(a,b):
+    print(i,j)    
+
+1 3
+2 4
+3 5
 #데이터저장
 df2.iloc[list_man].to_csv('./Desktop/도시공간구조 및 분석/팀플/남자고용률.csv', encoding='cp949')
