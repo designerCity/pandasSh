@@ -1,6 +1,7 @@
 # DataFrame Indexing
 iphone_df = pd.read_csv('./Downloads/iphone.csv', index_col=0)
 iphone_df
+
 출시일	디스플레이	메모리	출시 버전	Face ID
 iPhone 7	2016-09-16	4.7	2GB	iOS 10.0	No
 iPhone 7 Plus	2016-09-16	5.5	3GB	iOS 10.0	No
@@ -11,6 +12,7 @@ iPhone XS	2018-09-21	5.8	4GB	iOS 12.0	Yes
 iPhone XS Max	2018-09-21	6.5	4GB	iOS 12.0	Yes
 iphone_df.loc['iPhone 8', '메모리']
 '2GB'
+
 iphone_df.loc['iPhone X', :]
 출시일        2017-11-03
 디스플레이             5.8
