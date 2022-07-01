@@ -130,13 +130,15 @@ iPhone X          True
 iPhone XS         True
 iPhone XS Max     True
 Name: Face ID, dtype: bool
+
 iphone_df.loc[iphone_df['Face ID'] == 'Yes']
 출시일	디스플레이	메모리	출시 버전	Face ID
 iPhone X	2017-11-03	5.8	3GB	iOS 11.1	Yes
 iPhone XS	2018-09-21	5.8	4GB	iOS 12.0	Yes
 iPhone XS Max	2018-09-21	6.5	4GB	iOS 12.0	Yes
-두개 이상의 조건
-and 연산 조건
+
+  // 두개 이상의 조건
+  // and 연산 조건 
 condition_and
 condition_and = (iphone_df['디스플레이'] > 5) & (iphone_df['Face ID'] == 'Yes')
 iphone_df.loc[condition_and]
